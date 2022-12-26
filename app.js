@@ -206,7 +206,8 @@ app.post("/auth/login", async (req, res) => {
 const dbUser = process.env.DB_USER
 const dbPassword = process.env.DB_PASS
 
-mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@cluster0.oasngpn.mongodb.net/?retryWrites=true&w=majority`)
+// mongodb+srv://${dbUser}:${dbPassword}@cluster0.oasngpn.mongodb.net/?retryWrites=true&w=majority
+mongoose.connect(``)
     .then(() => {
         app.listen(3000)
         console.log('Conectou ao banco!')
